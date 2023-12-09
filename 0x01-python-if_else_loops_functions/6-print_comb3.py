@@ -5,4 +5,4 @@ for i in range(10):
             if i == 1 and j == 9:
                 print("{:d}{:d}".format(i, j))
                 break
-            print("{:d}{:d}, ".format(i, j), end="")
+            print("{:d}{:d}, ".format(i + 1, j), end="")
