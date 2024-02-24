@@ -1,11 +1,15 @@
-class MyClass:
-    def __init__(self):
-        self.attribute = 42
-
-    def method(self):
-        return "Hello, World!"
+#!/usr/bin/python3
+"""Defines an object attribute lookup function."""
 
 
-obj = MyClass()
+def lookup(obj):
+    """
+    Returns a list of available attributes and methods of an object.
 
-print(lookup(obj))
+    Args:
+    - obj (object): The object to inspect.
+
+    Returns:
+    - list: List of available attributes and methods.
+    """
+    return dir(obj)
