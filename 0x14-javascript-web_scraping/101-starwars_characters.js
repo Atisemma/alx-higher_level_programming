@@ -28,7 +28,7 @@ request(apiUrl, (error, response, body) => {
         }
 
         if (response.statusCode !== 200) {
-          reject(`Failed to fetch data for character ${characterUrl}: ${response.statusCode}`);
+          reject(new Error(`Failed to fetch data for character ${characterUrl}: ${response.statusCode}`));
           return;
         }
 
